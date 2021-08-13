@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<title>Samir Joshi</title>
+<link rel = "icon" href = "img/logo.jpeg" 
+        type = "image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar  w3-cyan w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">X</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Samir<br>Joshi</b><br><i class="fa fa-phone-square" style="font-size:20px;color:black">&nbsp;<a href="tel:+91 73838 71833">+91 73838 71833</a></i><br>
+    <i class="fa fa-envelope" style="font-size:20px;color:black">&nbsp;<a href="mailto:samirjoshi1975@gmail.com">samirjoshi1975@gmail.com</a></p></i>
+    </h3>
+    
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-cyan w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-cyan w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Samir Joshi</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Portfolio</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="img/hall.jpeg" style="width:100%" onclick="onClick(this)" alt="Hall/Entrance">
+      <img src="img/bedroom.jpeg" style="width:100%" onclick="onClick(this)" alt="Bedroom">
+      <img src="img/kitchen.jpeg" style="width:100%" onclick="onClick(this)" alt="Kitchen">
+    </div>
+
+    <div class="w3-half">
+      <img src="img/hall2.jpeg" style="width:100%" onclick="onClick(this)" alt="Hall/Entrance">
+      <img src="img/bedroom2.jpeg" style="width:100%" onclick="onClick(this)" alt="Spare Bedroom">
+      <img src="img/open space.jpeg" style="width:100%" onclick="onClick(this)" alt="Open Space">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <p>I will help organize transactions between buyers and sellers, as well as those between owners and renters.
+     I will be responsible for carrying offers and counteroffers between each party, along with any queries they
+     may have. I will work with another agent when an offer is accepted, guiding clients through the process of filling out paperwork.
+     I will also make sure that My clients are fully aware of any requirements to complete the sale including home inspections, moving,
+     and important dates such as the closing.
+    </p>
+  </div>
+  
+ 
+
+<!--Self intro-->
+<div class="w3-row" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>About Me.</b></h1>
+    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Samir Joshi</b></p><br>
+      <img src="img/user.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500px" height="400px">
+    </div>
+
+    <!-- text on side of the img -->
+    <div class="w3-col m6 w3-padding-large">
+      <p>Welcome to my website. I am Samir Joshi a real Estate broker with the experience of 15+ years in the field and many Happy Customers,
+      My role as an broker will be to help set listing prices, suggest home updates that will increase
+      the home's value (and the chance of a successful sale), help with home staging, and market the home 
+      via the local Multiple Listing Service (MLS) and other channels. i will also help negotiate sales prices closing
+      costs and other fees and help prepare, submit, and file documents.I will aslo find properties that match the buyer's requirements
+      (aka the "wish list") and price range and help arrange home appraisals and inspections. I will aslo negotiate terms and help prepare, 
+      submit, and file the necessary documents.
+      </p>
+    </div>
+  </div>
+
+ <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid darkblue" class="w3-round">
+    <p>Want to reach out and Know more? Fill out the form and fill me in with the details!</p>
+    <form action="mailto:kairavjoshi2013@gmail.com" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
